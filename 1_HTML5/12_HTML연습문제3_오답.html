@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>12_HTML연습문제3_오답</title>
+    </head>
+    <body>
+
+        <form>
+
+            <h1>회원가입</h1>
+
+            <fieldset>
+                <legend>필수 입력 사항</legend>
+
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <td>
+                            <input type="text" placeholder="아이디 10글자 이내" name="id">
+                        </td>
+                        <td>
+                            <button type="button">중복확인</button>
+                            <!-- button 의 기본값 : submit -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호</th>
+                        <td colspan="2">
+                            <input type="password" size="30px" placeholder="영문, 숫자, 특수문자 포함 8자 이상">
+                            <!-- 관리자 도구 탭 사용해서 확인하기 -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호 확인</th>
+                        <td colspan="2">
+                            <input type="password" size="30px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>
+                            <input type="email">
+                        </td>
+                        <td>
+                            <select>
+                                <option selected>직접입력</option>
+                                <option>naver.com</option>
+                                <option>daum.net</option>
+                                <option>gmail.com</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+            </fieldset>
+
+        </form>
+        
+    </body>
+</html>
