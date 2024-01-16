@@ -1,0 +1,96 @@
+/* 일반 구조 선택자 */
+
+/* :first-child : 형제 관계의 요소 중 첫번째 요소 */
+#test1 > p:first-child {
+    background-color: red;
+    color: white;
+}
+
+/* :last-child : 형제 관계의 요소 중 마지막 요소 */
+#test1 > pre:last-child {
+    background-color: orange;
+}
+
+/* 첫번째, 마지막 요소의 속성명이 다르면 적용이 안됨 */
+
+/* :nth-child(수열) : 형제 관계 요소 중 지정된 수열번째 요소를 모두 선택 
+    - 순서 따질때 1부터 시작 */
+#test1 > p:nth-child(2) {
+    /* #test1의 자식 요소 중 2번째 요소를 선택하고,
+        p태그인지 검사
+    */
+    background-color: yellow;
+}
+
+#test1 > p:nth-child(4) {
+    /* #test1의 자식 요소 중 4번째 요소를 선택하고,
+        p태그인지 검사
+    */
+    background-color: greenyellow;
+}
+
+/* 홀수번째 형제 요소 선택 */
+#test1 > p:nth-child(2n-1) {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* 짝수번째 형제 요소 선택 */
+#test1 > p:nth-child(2n) {
+    border: 3px solid black;
+}
+
+/* :nth-lastchild(수열)
+    형제 관계 요소 중
+    뒤에서부터 지정된 수열번째 요소를 모두 선택
+ */
+ #test1 > p:nth-last-child(2) {
+    /* <해석 순서 주의> #test 자식중에
+    두번째 자식이 p태그인지 검사 */
+    color: pink;
+ }
+
+ /********************************************/
+
+ /* 형태 구조 선택자 */
+ 
+ /* :first-of-type */
+ #test2 > p:first-of-type {
+    /* 해석 : 자식 p태그 중에 첫번째 요소 선택 */ 
+    background-color: orange;
+ }
+
+ #test2 > p:last-of-type {
+    /* 해석 : 자식 p태그 중에 마지막 요소 선택 */
+    background-color: skyblue;
+ }
+
+ /* :nth-of-type(수열) */
+ /* #test2의 자식 p태그 중에서 홀수번째 요소의 
+    글자크기 30px로 변경 */
+#test2 > p:nth-of-type(2n-1) {
+    font-size: 30px;
+}
+
+/* #test2의 자식 p태그 중에서 짝수번째 요소의 
+    배경색을 빨간색으로 변경 
+    :nth-last-of-type(수열) 이용*/
+#test2 > p:nth-last-of-type(2n) {
+    background-color: red;
+}
+
+/* #test2의 자식 pre 태그중 2번째 요소의 
+    배경색을 보라색으로 변경*/
+#test2 > pre:last-of-type {
+    background-color: blueviolet;
+}
+
+/* 부정 선택자 */
+#test3 > li:not(:nth-of-type(3n)) {
+    /* #test3 자식 li요소 중에 3의 배수 요소를 제외한
+        요소만 선택 */
+    background-color: yellowgreen;
+}
+
+
+    

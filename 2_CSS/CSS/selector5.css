@@ -1,0 +1,42 @@
+/* :only-child */
+/* 자식이 둘 이상일 때는 적용 X (다른 태그여도) */
+#test1 > p:only-child {
+    background-color: skyblue;
+}
+
+/* :only-of-type */
+/* 자식 중에 p태그가 유일하면 적용됨 (다른 태그가 있어도)
+    즉, 또 다른 p태그가 있다면 적용 X */
+#test2 > p:only-of-type {
+    background-color: red;
+}
+
+/* :empty */
+#test3 > p:empty {
+    background-color: gray;
+    height: 50px;
+}
+
+/* 여러 선택자 동시 선택 */
+#test4-1, #test4-2, .test4-3 {
+    background-color: aquamarine;
+    color: blueviolet;
+}
+
+/* 특정 요소 내부에 있는 특정 클래스만 선택 */
+/* #test5-1 의 후손 중 클래스가 c5인 요소를 선택 */
+#test5-1 .c5 {
+    background-color: yellow;
+}
+
+/* #test5-2의 자식 중 class가 c5인 li요소만 선택 */
+/* li.c5 (띄어쓰기 없음!!) */
+#test5-2 > li.c5 {
+    background-color: orange;
+}
+
+/* 클래스가 여러개인 요소만 선택 */
+/* 띄어쓰기 X */
+.test6.c6 {
+    background-color: red;
+}
