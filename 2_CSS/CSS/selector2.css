@@ -56,15 +56,15 @@ p[name="name-1"] {
     background-color: pink;
     width: 230px;
     height: 230px;
+
+    transition-duration: 0.5s;
+    /* #hover-test 요소가 변화를 일으키면 0.5초 동안 변해라 */
 }
 
-/* #hover-test 요소가 변화를 일으키면 0.5초 동안 변해라 */
-#hover-test {
-    transition-duration: 0.5s;
-}
 
 #focus-test:focus {
     background-color: aquamarine;
+    border: 10px solid black;
 }
 
 input[name="fruits"]:checked {
