@@ -17,7 +17,7 @@
     height: 50px;
 }
 
-/* 여러 선택자 동시 선택 */
+/* 여러 선택자 동시 선택 (,) 사용하여 나열 */
 #test4-1, #test4-2, .test4-3 {
     background-color: aquamarine;
     color: blueviolet;
@@ -35,8 +35,17 @@
     background-color: orange;
 }
 
+/* Test */
+#test5-2 > li > span.c5 {
+    background-color: lightblue;
+}
+
 /* 클래스가 여러개인 요소만 선택 */
 /* 띄어쓰기 X */
 .test6.c6 {
     background-color: red;
+}
+
+.test6 {
+    border: 1px solid black;
 }

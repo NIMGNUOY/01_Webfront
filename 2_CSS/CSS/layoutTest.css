@@ -1,0 +1,88 @@
+div {
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.container-1 {
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+#test1:first-child {
+    background-color: red;
+    position: absolute;
+    
+    width: 100px;
+    height: 100px;
+    top: 200px;
+}
+
+#test1:nth-child(2) {
+    background-color: red;
+    position: absolute;
+    
+    width: 100px;
+    height: 100px;
+    top: 300px;
+}
+
+#test1:nth-child(3) {
+    background-color: red;
+    position: absolute;
+    
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+}
+
+#test1:nth-child(4) {
+    background-color: red;
+    position: absolute;
+    
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    left: 100px;
+}
+
+#test1:nth-child(5) {
+    background-color: green;
+    position: absolute;
+    
+    width: 100px;
+    height: 100px;
+    top: 300px;
+    left: 100px;
+}
+
+#test1:nth-child(6) {
+    background-color: green;
+    position: absolute;
+    
+    width: 100px;
+    height: 100px;
+    top: 300px;
+    left: 200px;
+}
+
+#test1:nth-child(7) {
+    background-color: green;
+    position: absolute;
+    
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    left: 200px;
+}
+
+#test1:nth-child(8) {
+    background-color: green;
+    position: absolute;
+    
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    left: 300px;
+}
