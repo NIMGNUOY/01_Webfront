@@ -93,8 +93,10 @@
         왜? margin 속성 자체가 상하좌우를 동시에 지정하는
         속성이라 상(top) 부분에도 auto가 지정되어 이전 
         100px 덮어쓰기함 */
+    
     margin: auto;
-    margin-top: 100px;
+    margin-top: 100px; 
+        
     /* 해결 방법 : margin-top 을 auto 보다 아래에
         작성하여 auto를 100px로 덮어쓴다. */
 }

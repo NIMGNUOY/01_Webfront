@@ -65,21 +65,21 @@
     height: 472px;
 }
 
-#container-3 > .div-4:first-of-type {
+#container-3 > .div-4:first-child {
     width: 100%;
     height: 20%;
 
     background-color: yellowgreen;
 }
 
-#container-3 > .div-4:nth-of-type(2) {
+#container-3 > .div-4:nth-child(2) {
     width: 100%;
     height: 30%;
 
     background-color: aquamarine;
 }
 
- #container-3 > .div-4:last-of-type {
+ #container-3 > .div-4:last-child {
     width: 100%;
     height: 50%;
 
