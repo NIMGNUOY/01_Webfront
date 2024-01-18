@@ -47,6 +47,7 @@
 
 #deco-ul > li:nth-child(4) > a {
     text-decoration: none;
+    /* a태그의 밑줄 사라짐 */
 }
 
 /* text-align */
