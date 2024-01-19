@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+body {
+    margin-left: 0;
+}
+
+main {
+    width: 1200px;
+
+    margin: auto;
+}
+/*********************************/
+
+header {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signature {
+    flex-basis: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#signature-logo {
+    width: 200px;
+    height: 200px;
+}
+
+.MyName {
+    flex-basis: 60%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#MyName-spel {
+    font-size: 80px;
+    color: rgb(17, 17, 88);
+}
+
+.communicate-area {
+    flex-basis: 20%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#phone-logo {
+    font-size: 20px;
+    color: rgb(17, 17, 88);
+}
+
+#instagram-logo {
+    font-size: 20px;
+    color: rgb(17, 17, 88);
+}
+
+/**************************************/
+
+nav {
+    height: 50px;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}
+
+nav li {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(17, 17, 88);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+nav span {
+    font-size: 38px;
+    color: rgb(17, 17, 88);
+}
+
+nav li:hover {
+    background-color: rgb(17, 17, 88);
+    color: white;
+}
+
+/*******************************************/
+
+.main-area {
+    height: 1000px;
+
+    display: flex;
+}
+
+.content-1 {
+    flex-basis: 80%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content-1-1 {
+    flex-basis: 50%;
+
+    display: flex;
+    border: none;
+    outline: none;
+}
+
+#newLife-img {
+    width: 300px;
+    margin: 20px;
+}
+
+#newLife-content {
+    flex-basis: 600px;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#newLife-content fieldset:first-child {
+    flex-basis: 40%;
+    font-size: 70px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+#newLife-content fieldset:last-child {
+    flex-basis: 60%;
+    border: none;
+    outline: none;
+    font-size: 30px;
+}
+
+.content-1-2 {
+    flex-basis: 50%;
+    display: flex;
+    border: none;
+    outline: none;
+}
+
+#NextStep-img {
+    width: 500px;
+    margin: 20px;
+}
+
+#NextStep-content {
+    flex-basis: 400px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#NextStep-content fieldset:first-child {
+    flex-basis: 40%;
+    font-size: 70px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding-left: 0;
+}   
+
+#NextStep-content fieldset:last-child {
+    flex-basis: 60%;
+    border: none;
+    outline: none;
+    font-size: 30px;
+}
+
+.content-2 {
+    flex-basis: 20%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.history {
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+#history-title {
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: rgb(17, 17, 88);
+}
+
+
+
+.history div {
+    height: 100px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+
+.history strong {
+    border: none;
+    outline: none;
+    color: rgb(17, 17, 88);
+}
+
+#goTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#goTop:hover {
+    background-color: rgb(230, 230, 230);
+    
+}
+
+#goTop-btn {
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+/*********************************************/
+
+footer {
+    width: 1200px;
+    height: 200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+

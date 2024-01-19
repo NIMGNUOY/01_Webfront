@@ -8,15 +8,18 @@ body {
 }
 
 main {
-    width: 1140px;
+    width: 1500px;
     margin: auto;
 }
 
 header {
+    width: 1600px;
     height: 50px;
     display: flex;
+    background-color: white;
 
     position: sticky;
+    top: 0;
 }
 
 header > section:nth-child(1),
@@ -51,6 +54,8 @@ header > section:nth-child(1) {
     background-color: transparent;
     font-size: 25px;
     cursor: pointer;
+    width: 50px;
+    height: 50px;
 }
 
 #bars-btn:hover {
@@ -64,6 +69,7 @@ header > section:nth-child(1) {
 
 #home-logo {
     width: 120px;
+    height: 50px
 }
 
 /**********************************/
@@ -130,13 +136,22 @@ header > section:nth-child(1) {
     display: flex;
     padding: 0;
 
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+
+    margin-left: 70px;
+
+    /* background-color: red; */
+    /* border: 1px solid red; */
 }
 
-#ctreate-btn, #alert-btn, #myPage-btn {
+.icon-parents {
     flex-basis: calc(100%/3);
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
 }
+
 
 #create-btn {
     border: none;
@@ -163,14 +178,20 @@ header > section:nth-child(1) {
     cursor: pointer;
     width: 50px;
     height: 50px;
+    
 }
-
 
 #alert-btn:hover {
     background-color: #ddd;
     border-radius: 50%;
+
 }
 
+
+#myPage-btn {
+    width: 50px;
+    height: 50px;
+}
 /******************************************/
 
 footer {
@@ -219,7 +240,7 @@ footer {
 }
 
 #owner {
-    flex-basis: 50%;
+    flex-basis: 40%;
 
     display: flex;
 }
@@ -230,8 +251,7 @@ footer {
 
 #owner-name {
     flex-basis: 50%;
-
-    text-align: center;
+    margin-left: 20px;
 }
 
 #subscribe {
@@ -253,28 +273,41 @@ footer {
 }
 
 #action {
-    flex-basis: 50%;
+    flex-basis: 60%;
 
     display: flex;
-    
+    margin-left: 250px;
 }
 /*************************************/
-#action i {
+#action div {
     border: none;
     outline: none;
-    background-color: rgb(230, 230, 230);
     border-radius: 20px;
     cursor: pointer;
 
     padding: 5px;
-    
-    font-weight: lighter;
-    font-size: 15px;
+    background-color: rgb(230, 230, 230);
+    font-size: 20px;
+    font-weight: normal;
 }
 
-#action i:hover {
+#action div:hover {
     background-color: rgb(210, 210, 210);
 }
+
+#action div:nth-of-type(1) {
+    width: 70px;
+    text-align: center;
+}
+
+#action div:nth-of-type(2) {
+    width: 50px;
+    text-align: center;
+}
+
+
+
+
 /******************************************/
 
 
@@ -320,17 +353,19 @@ footer {
     align-items: center;
 }
 
+
+
+
 #side-selector button {
 
-    height: 30px;
+    height: 33px;
     border: none;
     outline: none;
-    border-radius: 10px;
+    border-radius: 12px;
     background-color: rgb(230, 230, 230);
 
-    font-size: 15px;
+    font-size: 17px;
     cursor: pointer;
-
     margin: 0 2px;
 }
 
@@ -343,6 +378,8 @@ footer {
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     margin-top: 10px;
 }
@@ -352,4 +389,26 @@ footer {
     height: 150;
 }
 
+/**********************************************/
+
+@media all and (max-width: 767px) {
+
+    main {
+        width: 100vw;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .side-area {
+        width: 800px;
+    }
+
+
+}
 
