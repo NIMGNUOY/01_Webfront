@@ -171,11 +171,13 @@ function check() {
 
     let a = 10;
     let b = 5;
-    let c = ++a * b--;
-
+    let c = ++a * b--;  //1. a값에 1더함 
+                        //2. a * b 
+                        //3. b값에 1를 뺌
+                        
     // 최종적으로 a,b,c 에 저장된 값은 얼마?
-    // a == 10
-    // b == 5
+    // a == 11
+    // b == 4
     // c == 55
 
     console.log(a);
@@ -183,3 +185,37 @@ function check() {
     console.log(c);
 }
 
+//-----------------------------------------------
+
+// 연습 문제
+
+/*
+const name = document.getElementById("userName");
+const age = document.getElementById("userAge");
+const gender = document.getElementById("userGender");
+
+function printJSObject() {
+    const Name = name.value;
+    const Age = age.value;
+    const Gender = gender.value;
+
+    console.log({이름 : Name, 나이 : Age, 성별 : Gender});
+}
+*/
+
+
+// 모범 답안
+
+function printJSObject() {
+    const userName = document.getElementById("userName");
+    const userAge = document.getElementById("userAge");
+    const userGender = document.getElementById("userGender");
+    
+    const userInfo = {
+        이름 : userName.value,
+        나이 : userAge.value,
+        성별 : userGender.value
+    };
+
+    console.log(userInfo);
+}
