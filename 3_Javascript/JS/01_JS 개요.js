@@ -21,7 +21,7 @@ const body = document.querySelector("body");
 /* 실행되면 다크모드로 바꾸는 함수(기능) */
 function darkMode() {
     body.style.color = "white"; //글자색을 흰색으로 변경
-    body.style.backgroundColor = "black";
+    body.style.backgroundColor = "black"; 
     // 배경색을 검정색으로 변경
 }
 
