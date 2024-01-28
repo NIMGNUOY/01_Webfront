@@ -6,6 +6,8 @@
         <title>전화번호부TEST</title>
 
         <link rel="stylesheet" href="../css/전화번호부TEST.css">
+
+        <script src="https://kit.fontawesome.com/fa0ef5fd68.js" crossorigin="anonymous"></script> 
     </head>
     <body>
         
@@ -14,6 +16,7 @@
                 <section id="dialScreen">
                     <div class="phoneNum"></div>
                 </section>
+
                 <section id="dial">
                     <table id="dialPad">
                         <tr>
@@ -38,15 +41,20 @@
                         </tr>
                     </table>
                 </section>
+
                 <section id="btn">
                     <button id="addBtn">추가</button>
-                    <button id="resetBtn">초기화</button>
+                    <button id="resetBtn" type="reset">초기화</button>
                 </section>
+
             </div>
-            <div class="telNumber">
+
+
+            <div class="numberIndex">
                 <p>전화 번호 목록</p>
-                <div id="numberIndex"></div>
+                <div class="telNumber"></div>
             </div>
+            
         </div>
 
         <script src="../JS/전화번호부TEST.js"></script>

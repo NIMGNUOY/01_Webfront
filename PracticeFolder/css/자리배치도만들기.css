@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+#box {
+  margin: auto;
+  width: 800px;
+  height: 600px;
+  border: 2px solid black;
+}
+
+.row {
+  height: 80px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+
+span {
+  flex-basis: 10%;
+  height: 70px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 70px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+span:hover {
+  background-color: skyblue;
+}
+
+.selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.selector input {
+  margin-left: 10px;
+}
+

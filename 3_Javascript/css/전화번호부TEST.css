@@ -6,7 +6,7 @@
 }
 
 .container {
-    width: 600px;
+    width: 650px;
     height: 800px;
     display: flex;
 }
@@ -26,6 +26,17 @@
     width: 100%;
     flex-basis: 15%;
     border-bottom: 3px solid #ddd;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.phoneNum {
+    margin: auto;
+    padding: 0;
 }
 
 #dial {
@@ -90,13 +101,24 @@
 }
 
 
-.telNumber {
+.numberIndex {
     flex-basis: 30%;
     height: 100%;
     
 }
 
-.telNumber > p {
+.numberIndex > p {
+    
     font-size: 25px;
     font-weight: bold;
+    border-bottom: 2px solid #ddd;
+
 }
+
+.telNumber {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
