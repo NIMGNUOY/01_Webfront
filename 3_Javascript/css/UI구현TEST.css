@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+.container {
+    width: 600px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.selector {
+    flex-basis: 40%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#result-box {
+    width: 100%;
+    flex-basis: 60%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    cursor: pointer;
+    width: 80px;
+}
+
+#text-box {
+    width: 400px;
+}
+

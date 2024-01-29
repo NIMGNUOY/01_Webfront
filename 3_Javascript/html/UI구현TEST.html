@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UI 구현 TEST</title>
+
+        <link rel="stylesheet" href="../css/UI구현TEST.css">
+    </head>
+    <body>
+        <!--
+        <div class="container">
+        
+            <div class="selector">
+
+                <span>
+                    너비 : <input type="number" id="width"> px
+                </span>
+                <span>
+                    높이 : <input type="number" id="height"> px
+                </span>
+                <br>
+
+                
+                <span>
+                    글자크기 : <input type="number" id="font-size"> px
+                </span>
+                
+
+                <span>
+                    굵기 : <label title="normal">보통</label><input type="radio" name="font-weight" id="normal">
+                           <label title="bold">굵게</label><input type="radio" name="font-weight" id="bold">
+                </span>
+                <br>
+
+                <span>
+                    글자색 : <input type="text" id="text-color">
+                </span>
+                <span>
+                    배경색 : <input type="text" id="bg-color">
+                </span>
+                <br>
+
+                <span>
+                    가로정렬 : <label title="row-left">왼쪽</label> <input type="radio" name="row" id="row-left">
+                              <label title="row-center">가운데</label><input type="radio" name="row" id="row-center">
+                              <label title="row-right">오른쪽</label><input type="radio" name="row" id="row-right">
+                </span>
+
+                <span>
+                    세로 정렬 : <label title="col-top">위</label> <input type="radio" name="col" id="col-top">
+                                <label title="col-center">가운데</label><input type="radio" name="col" id="col-center">
+                                <label title="col-bottom">아래</label><input type="radio" name="col" id="col-bottom">
+                </span>
+                <br>
+
+                <span>
+                    출력 문자열 : <input type="text" id="text-box">
+                </span>
+
+            </div>
+
+            <br></br>
+
+            <center><button type="button" id="btn">적용하기</button></center>
+
+            <br><br>
+
+            <div id="result-box">
+
+
+            </div>
+
+        </div>
+        -->
+        <center><h1>UI 구현 TEST</h1></center>
+
+        <div class="container">
+
+            <section class="selector">
+                <table>
+                    <tr>
+                        <th>너비 : </th>
+                        <td>
+                            <input type="number" min="0" id="width"> px
+                        </td>
+                        <th>높이 : </th>
+                        <td>
+                            <input type="number" min="0" id="height"> px
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>글자크기 : </th>
+                        <td>
+                            <input type="number" min="0" id="font-size"> px
+                        </td>
+                        <th>굵기 : </th>
+                        <td>
+                            <label title="normal">보통</label><input type="radio" name="font-weight" id="normal">
+                           <label title="bold">굵게</label><input type="radio" name="font-weight" id="bold">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>글자색 : </th>
+                        <td>
+                            <input type="text" id="text-color">
+                        </td>
+                        <th>배경색 : </th>
+                        <td>
+                            <input type="text" id="bg-color">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>가로정렬 : </th>
+                        <td colspan="3">
+                            <label title="row-left">왼쪽</label> <input type="radio" name="row" id="row-left">
+                            <label title="row-center">가운데</label><input type="radio" name="row" id="row-center">
+                            <label title="row-right">오른쪽</label><input type="radio" name="row" id="row-right">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>세로정렬 : </th>
+                        <td><label title="col-top">위</label> <input type="radio" name="col" id="col-top">
+                            <label title="col-center">가운데</label><input type="radio" name="col" id="col-center">
+                            <label title="col-bottom">아래</label><input type="radio" name="col" id="col-bottom"></td>   
+                    </tr>
+
+                    <tr>
+                        <th>출력 문자열 : </th>
+                        <td colspan="3">
+                            <input type="text" id="text-box" placeholder="문자를 입력하세요.">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="4">
+                            <button type="button" id="btn">적용하기</button>
+                        </th>
+                    </tr>
+
+                </table>
+                
+            </section>
+
+            <section id="result-box">
+
+            </section>
+        </div>
+
+        
+        
+
+
+        <script src="../JS/UI구현TEST.js"></script>
+    </body>
+</html>
