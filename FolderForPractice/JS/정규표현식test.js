@@ -70,30 +70,48 @@ document.getElementById("inputName").addEventListener("keyup", (e) => {
 
 });
 
-// 성별 체크
 
-const male = document.getElementById("male");
-const female = document.getElementById("female");
-
-if (!male.checked && !female.checked) {
-    alert("성별을 선택해주세요.");
-}
-
-// 전화번호 형식 검사
-
-document.getElementById("inputCelNum").addEventListener("keyup", (e) => {
+document.getElementById("joinBtn").addEventListener("click", (e) => {
     
-    const regExp = /^[0][0-9]{1,3}\-[0-9]{4}\-[0-9]{4}/;
+    // 성별 체크
+    const male = document.getElementById("male");
+    const female = document.getElementById("female");
 
-    const celMessage = document.getElementById("celMessage");
-
-    if(regExp.test(e.target.value)) {
-
-        celMessage.innerHTML = "확인";
-        e.target.style.backgroundColor = "springgreen";
-        
-    } else {
-        alert("전화번호의 형식이 올바르지 않습니다.")
+    if (!male.checked && !female.checked) {
+        alert("성별을 선택해주세요.");
     };
 
+    // 전화번호 유형 판별
+    
+    const inputCelNum = document.getElementById("inputCelNum");
+    const regExp = /^[0][0-9]{1,2}\-[0-9]{3,4}\-[0-9]{4}/;
+    
+    if(regExp.test(inputCelNum.value)) {
+    
+        alert("회원가입이 완료되었습니다.");
+        return;
+            
+    } else {
+        alert("전화번호의 형식이 올바르지 않습니다.");
+        return;
+    };
+    
+    
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

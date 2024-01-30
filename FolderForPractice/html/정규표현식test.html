@@ -66,75 +66,77 @@
 
         <fieldset>
             <legend style="font-weight: bold;">회원 가입 양식</legend>
-            <table>
-                <tr>
-                    <th>아이디</th>
-                    <th>
-                        <input type="text" id="inputId">
-                    </th>
-                    <th>
-                        <button type="button">중복확인</button>
-                    </th>
-                </tr>
+            <form>
+                <table>
+                    <tr>
+                        <th>아이디</th>
+                        <th>
+                            <input type="text" id="inputId">
+                        </th>
+                        <th>
+                            <button type="button">중복확인</button>
+                        </th>
+                    </tr>
 
-                <tr>
-                    <th>비밀번호</th>
-                    <th>
-                        <input type="password" id="pw">
-                    </th>
-                    <th id="pwMessage">
+                    <tr>
+                        <th>비밀번호</th>
+                        <th>
+                            <input type="password" id="pw">
+                        </th>
+                        <th id="pwMessage">
 
-                    </th>
-                </tr>
+                        </th>
+                    </tr>
 
-                <tr>
-                    <th>비밀번호확인</th>
-                    <th>
-                        <input type="password" id="checkPw">
-                    </th>
-                    <th></th>
-                </tr>
+                    <tr>
+                        <th>비밀번호확인</th>
+                        <th>
+                            <input type="password" id="checkPw">
+                        </th>
+                        <th></th>
+                    </tr>
 
-                <tr>
-                    <th>이름</th>
-                    <th>
-                        <input type="text" id="inputName">
-                    </th>
-                    <th id="nameMessage">
+                    <tr>
+                        <th>이름</th>
+                        <th>
+                            <input type="text" id="inputName">
+                        </th>
+                        <th id="nameMessage">
 
-                    </th>
-                </tr>
+                        </th>
+                    </tr>
 
-                <tr>
-                    <th>성별</th>
-                    <td>
-                        <label for="male">남</label><input id="male" type="radio" name="gender">
-                        <label for="female">여</label><input id="female" type="radio" name="gender">
+                    <tr>
+                        <th>성별</th>
+                        <td>
+                            <label for="male">남</label><input id="male" type="radio" name="gender">
+                            <label for="female">여</label><input id="female" type="radio" name="gender">
 
-                    </td>
-                </tr>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <th>전화번호</th>
-                    <th>
-                        <input id="inputCelNum">
-                    </th>
-                    <td id="celMessage">
+                    <tr>
+                        <th>전화번호</th>
+                        <th>
+                            <input id="inputCelNum">
+                        </th>
+                        <td id="celMessage">
 
-                    </td>
-                </tr>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <th>이메일</th>
-                    <th>
-                        <input type="text" id="email">
-                    </th>
-                </tr>
+                    <tr>
+                        <th>이메일</th>
+                        <th>
+                            <input type="text" id="email">
+                        </th>
+                    </tr>
 
-            </table>
+                </table>
 
-            <button id="resetBtn">초기화</button>
-            <button id="joinBtn">회원가입</button>
+                <button id="resetBtn">초기화</button>
+                <button id="joinBtn">회원가입</button>
+            </form>
         </fieldset>
 
         <script src="../JS/정규표현식test.js"></script>

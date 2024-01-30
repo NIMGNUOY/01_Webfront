@@ -53,3 +53,11 @@ clockFn();
 document.getElementById("stop").addEventListener("click", () => {
     clearInterval(interval);
 });
+
+/*
+  -> setInterval(function() {
+        clock.innerText = currentTime();
+     }, 1000);
+
+     함수를 stop 시킴
+*/
