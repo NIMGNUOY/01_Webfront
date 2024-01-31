@@ -1,3 +1,5 @@
+/*
+
 const idxNum = document.querySelector("#idxNum");
 const addBtn = document.querySelector("#btn");
 
@@ -31,6 +33,49 @@ addBtn.addEventListener("click", () => {
 
         result.innerHTML = `${sum}`;
 
+    });
+    
+});
+
+*/
+
+const addBtn = document.getElementById("btn");
+const idxNum = document.getElementById("idxNum");
+const sumBtn = document.getElementById("sumBtn");
+
+addBtn.addEventListener("click", () => {
+
+    const value = Number(idxNum.value);
+
+    for (let i = 1; i <= value; i++ ) {
+
+        const numInput = document.createElement("input");
+        numInput.classList.add("input-number");
+        
+        const container = document.getElementById("container");
+        
+        container.append(numInput);
+        
+    }
+    
+    sumBtn.addEventListener("click", () => {
+        
+        const inputValue = document.querySelectorAll(".input-number");
+        
+        let sum = 0;
+        
+        for (let i = 0; i < inputValue.length; i++) {
+
+            const v2 = Number(inputValue[i].value);
+
+
+            sum += v2;
+            
+        }
+        
+        const result = document.getElementById("result");
+        result.innerHTML = `${sum}`;
+        
     });
     
 });

@@ -53,6 +53,6 @@ btn.addEventListener("click", () => {
     // 총 가격 도출하기
     const result = document.getElementById("result");
 
-    result.innerHTML = `${applePrice() + bananaPrice() + melonPrice()} 원`;
+    result.innerHTML = `총액 : ${applePrice() + bananaPrice() + melonPrice()} 원`;
 
 });

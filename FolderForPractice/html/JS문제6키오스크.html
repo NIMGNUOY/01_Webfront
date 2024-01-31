@@ -11,6 +11,8 @@
             font-weight: normal;
             font-style: normal;
         }
+
+        /* * {border: 1px solid black;} */
         body {
             font-family: 'seolleimcool-SemiBold';
             margin: 0;
@@ -66,6 +68,7 @@
             text-align: center;
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
 
         .cart-item span:first-child{
@@ -80,6 +83,7 @@
 
         .quantity {
             display: flex;
+            justify-content: center;
             align-items: center;
         }
 
@@ -99,8 +103,7 @@
         }
 
         #cart {
-            /* 초기에는 보이지 않도록 설정 */
-            display: none;
+            
             width: 800px;
             margin: auto;
         }
@@ -142,6 +145,7 @@
         <div id="cart"></div>
         <div id="total">합계: ₩0</div>
     </footer>
+
 
     <script src="../JS/JS문제6키오스크.js"></script>
 

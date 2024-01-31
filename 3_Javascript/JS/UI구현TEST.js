@@ -3,6 +3,7 @@ const btn = document.querySelector("#btn");
 
 btn.addEventListener("click", () => {
     
+    
     // 너비 
     const width = document.querySelector("#width");
     const widthVl = Number(width.value);
@@ -54,27 +55,32 @@ btn.addEventListener("click", () => {
     
     // 결과 출력하기
     const resultBox = document.querySelector("#result-box");
+    resultBox.innerHTML = '';
+    // 이전 결과값 없애기!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    
+    
     const result = document.createElement("div");
     result.classList.add("result-1");
     resultBox.append(result);
 
+    
     result.style.width = `${widthVl}px`;
-
+    
     result.style.height = `${heightVl}px`;
-
+    
     result.style.fontSize = `${fontSizeVl}px`;
-
+    
     result.style.color = `${colorVl}`;
-
+    
     result.style.backgroundColor = `${bgColorVl}`;
-
+    
     result.innerText = `${textBoxVl}`;
-
+    
     result.style.border = `3px solid black`;
     
-
+    
     console.log(btn);
-
+    
     // 폰트 굵기
     if (fontNormal.checked) {
         result.style.fontWeight = 'normal';
@@ -82,9 +88,9 @@ btn.addEventListener("click", () => {
     } else if (fontBold.checked) {
         result.style.fontWeight = 'bold';
     };
-
+    
     result.style.display = 'flex';
-
+    
     // 가로 정렬
     if (rowLeft.checked) {
         result.style.justifyContent = 'left';
@@ -93,7 +99,7 @@ btn.addEventListener("click", () => {
     } else if (rowRight.checked) {
         result.style.justifyContent = 'right'; 
     };
-
+    
     // 세로 정렬
     if (colTop.checked) {
         result.style.alignItems = 'flex-start';
@@ -103,7 +109,7 @@ btn.addEventListener("click", () => {
         result.style.alignItems= 'flex-end';
     };
     
-    console.log(result.style.alignContent);
+    console.log(result);
     
-    return;
+    
 });

@@ -14,19 +14,15 @@ createBtn.addEventListener("click", () => {
 
             num.classList.add("active");
 
-            let numActive = document.querySelectorAll(".active").length;
+            const lottoNum = document.querySelectorAll(".active");
 
-            if (numActive > 6) {
+            if (document.querySelectorAll(".active").length > 6) {
                 
                 alert("6개까지 선택 가능합니다.");
-                
-            }
-
+                num.style.backgroundColor = "white";
+            } 
         });
-        
-        
+               
     };
-    
-    
+      
 });
-

@@ -10,8 +10,9 @@ for (let i = 0; i < num.length; i++) {
         result.innerHTML += num[i].innerHTML;
 
         let str = result.innerHTML;
-        if(str.trim().length == '10') {
+        if(str.trim().length > 10) {
         alert("10자까지 입력 가능합니다.");
+        result.innerHTML = '';
     };
         
     });
