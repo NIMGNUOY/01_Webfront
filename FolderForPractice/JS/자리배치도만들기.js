@@ -33,14 +33,19 @@ const btn = document.querySelector("#btn");
 
 
 btn.addEventListener("click", () => {
-  const v1 = parseInt(adult.value);  // parseInt() : input 값에 입력된 string 자료형을
-  const v2 = parseInt(youth.value);  // 정수형 즉 , number 로 바꿔준다.
+  const v1 = Number(adult.value);  // parseInt() : input 값에 입력된 string 자료형을
+  const v2 = Number(youth.value);  // 정수형태로 바꿔준다.
 
   if (v1.length == 0 && v2.length == 0) {
+
     alert("인원수를 입력해주세요.");
+
   } else if (typeof v1 != 'number' || typeof v2 != 'number') {
+
     alert("숫자만 입력해주세요.");
+
   } else {
+
     alert (`성인 : ${v1} 명, 청소년 : ${v2} 명`);
 
     let count = 0;
