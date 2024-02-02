@@ -183,41 +183,41 @@ function decreaseQuantity(button) {
     updateTotal();
 }
 
-    // 장바구니 메뉴 삭제 함수
-    function deleteItem(button) {
-        const cartItem = button.parentElement;
+// 장바구니 메뉴 삭제 함수
+function deleteItem(button) {
+    const cartItem = button.parentElement;
+    const price = parseInt(cartItem.dataset.price, 10);
+    const quantity = parseInt(cartItem.querySelector('.quantity span').innerText, 10);
+
+    // 합계에서 해당 아이템 가격 차감
+    total -= price * quantity;
+
+    // 합계 갱신
+    totalElement.innerText = `합계: ₩${total.toLocaleString()}`;
+
+    cartItem.remove();
+
+    // 장바구니가 비어 있습니다. 문구 갱신
+    if (cart.children.length === 0) {
+        emptyCartDiv.style.display = 'block';
+        cart.style.display = 'none';
+    }
+}
+
+// 장바구니에 담긴 메뉴 합계 업데이트 함수
+function updateTotal() {
+    total = 0;
+    const cartItems = document.getElementsByClassName('cart-item');
+    for (const cartItem of cartItems) {
         const price = parseInt(cartItem.dataset.price, 10);
         const quantity = parseInt(cartItem.querySelector('.quantity span').innerText, 10);
-
-        // 합계에서 해당 아이템 가격 차감
-        total -= price * quantity;
-
-        // 합계 갱신
-        totalElement.innerText = `합계: ₩${total.toLocaleString()}`;
-
-        cartItem.remove();
-
-        // 장바구니가 비어 있습니다. 문구 갱신
-        if (cart.children.length === 0) {
-            emptyCartDiv.style.display = 'block';
-            cart.style.display = 'none';
-        }
+        total += price * quantity;
     }
+    totalElement.innerText = `합계: ₩${total.toLocaleString()}`;
 
-    // 장바구니에 담긴 메뉴 합계 업데이트 함수
-    function updateTotal() {
-        total = 0;
-        const cartItems = document.getElementsByClassName('cart-item');
-        for (const cartItem of cartItems) {
-            const price = parseInt(cartItem.dataset.price, 10);
-            const quantity = parseInt(cartItem.querySelector('.quantity span').innerText, 10);
-            total += price * quantity;
-        }
-        totalElement.innerText = `합계: ₩${total.toLocaleString()}`;
-
-        // 장바구니가 비어 있습니다. 문구 갱신
-        if (cart.children.length === 0) {
-            emptyCartDiv.style.display = 'block';
-            cart.style.display = 'none';
-        }
+    // 장바구니가 비어 있습니다. 문구 갱신
+    if (cart.children.length === 0) {
+        emptyCartDiv.style.display = 'block';
+        cart.style.display = 'none';
     }
+}

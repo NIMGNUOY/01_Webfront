@@ -70,3 +70,8 @@ btn.addEventListener("click", () => {
   
 
 });
+
+const string = "Hello World Good Bye";
+const words = string.split(' ');
+
+console.log(words);
