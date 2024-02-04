@@ -170,6 +170,7 @@ function addToCart(item, price) {
 function increaseQuantity(button) {
     const quantityElement = button.parentElement.querySelector('span');
     const quantity = parseInt(quantityElement.innerText, 10) + 1;
+    // parseInt() : quantityElement 요소를 10진수 정수형으로 바꾼다
     quantityElement.innerText = quantity;
     updateTotal();
 }
