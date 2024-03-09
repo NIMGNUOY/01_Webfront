@@ -210,3 +210,25 @@ function check6() {
 
     console.log(arr);
 }
+
+
+function check7() {
+
+    let count = 1;
+    const arr = [];
+
+    for(let row = 0; row < 5; row ++) {
+
+        arr[row] = [];
+
+        for(let col = 0; col < 5; col ++) {
+
+            arr[row][col] = count;
+            count += 2;
+            
+        }
+
+    }
+    console.log(arr);
+
+}
