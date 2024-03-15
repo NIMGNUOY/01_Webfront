@@ -232,3 +232,24 @@ function check7() {
     console.log(arr);
 
 }
+
+function check8() {
+
+    let count = 5;
+    const arr = [];
+
+    for(let row = 0; row < 5; row ++) {
+
+        arr[row] = [];
+
+        for(let col = 0; col < 5; col ++) {
+
+            arr[row][col] = count;
+            count += 5;
+            
+        }
+
+    }
+    console.log(arr);
+
+}
